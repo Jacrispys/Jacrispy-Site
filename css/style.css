@@ -1,0 +1,76 @@
+body {
+        background-color: #21252b;
+        display: flex;
+        position: relative;
+        overflow: visible;
+        width: auto;
+        height: auto;
+}
+.navBar {
+    background-color: cadetblue;
+    position: absolute;
+    display: flex;
+    width: auto;
+    height: 20vh;
+    inset: 5vh 8vh auto 8vh;
+}
+.navBarHome {
+    background-color: cadetblue;
+    filter: brightness(75%);
+    position: absolute;
+    display: flex;
+    width: 15%;
+    height: 100%;
+    inset: 1.5vh 1vh 1vh 1.5vh;
+    transition: .3s ease-in-out;
+}
+.navBarOption {
+    background-color: cadetblue;
+    filter: brightness(75%);
+    position: absolute;
+    margin-left: 17%;
+    display: inline-block;
+    width: 27%;
+    height: 100%;
+    inset: 1.5vh 1vh 1vh 1.5vh;
+    transition: .3s ease-in-out;
+}
+.navBarOption:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+.navBarHome:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+.homeButton {
+    margin: 0;
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    color: #4c4da3;
+    margin-top: 4vh;
+    font-size: 8vh;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+.homeButton:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+.underline {
+    background-color: #4c4da3;
+    display: block;
+    height: 6%;
+    margin: 0 auto;
+    width: 0;
+    transition: width .25s linear;
+}
+:where(.navBarHome,.navBarOption):hover>.underline,
+.active>.underline {
+    filter: brightness(50%);
+    width: 100%;
+}
